@@ -52,7 +52,7 @@
                 {
                     "upload": "0777",
                     "runtime": "0777",
-                    "api/assets": "0777",
+                    "web/assets": "0777",
                     "yii": "0755"
                 }
             ]

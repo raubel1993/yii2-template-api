@@ -35,7 +35,7 @@ return [
             'modules',
             'upload',
             'runtime',
-            'api/assets',
+            'web/assets',
         ],
         'setExecutable' => [
             'yii',
@@ -46,7 +46,7 @@ return [
         'setWritable' => [
             'upload',
             'runtime',
-            'api/assets',
+            'web/assets',
         ],
         'setExecutable' => [
             'yii',
@@ -57,7 +57,7 @@ return [
         'setWritable' => [
             'upload',
             'runtime',
-            'api/assets',
+            'web/assets',
         ],
         'setExecutable' => [
             'yii',
