@@ -12,19 +12,7 @@ $config = [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'app\commands',
     'aliases' => $aliases,
-    'components' => [
-        'cache' => [
-            'class' => 'yii\caching\FileCache',
-        ],
-        'log' => [
-            'targets' => [
-                [
-                    'class' => 'yii\log\FileTarget',
-                    'levels' => ['error', 'warning'],
-                ],
-            ],
-        ],
-    ],
+    'components' => [],
     'params' => $params,
     /*
     'controllerMap' => [

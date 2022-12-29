@@ -38,9 +38,6 @@ $config = [
             },*/
             'charset' => 'UTF-8',
         ], 
-        'cache' => [
-            'class' => 'yii\caching\FileCache',
-        ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => false,
@@ -50,15 +47,6 @@ $config = [
         /*'errorHandler' => [
             'errorAction' => 'site/error',
         ],*/
-        'log' => [
-            'traceLevel' => YII_DEBUG ? 3 : 0,
-            'targets' => [
-                [
-                    'class' => 'yii\log\FileTarget',
-                    'levels' => ['error', 'warning'],
-                ],
-            ],
-        ],
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
@@ -81,12 +69,10 @@ if (YII_ENV_DEV) {
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
-        'as GiiBehaviors' => \rguerral\gii\GiiBehaviors::class,
+        'as GiiBehaviors' => \rgl\gii\GiiBehaviors::class,
         // uncomment the following to add your IP if you are not connecting from localhost.
         //'allowedIPs' => ['127.0.0.1', '::1'],
     ];
 }
-
-
 
 return $config;
